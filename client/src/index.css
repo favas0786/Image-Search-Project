@@ -1,0 +1,294 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 20px;
+}
+
+.login-page {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 2rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.login-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 1.5rem;
+}
+
+.login-btn {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.login-btn:hover {
+  opacity: 0.8;
+}
+
+.login-btn.google {
+  background-color: #DB4437;
+  color: white;
+}
+.login-btn.github {
+  background-color: #333;
+  color: white;
+}
+.login-btn.facebook {
+  background-color: #4267B2;
+  color: white;
+}
+
+/* ... (keep your existing login styles) ... */
+
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-user {
+  font-weight: 500;
+}
+
+.navbar-btn {
+  background-color: #DB4437;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.home-page-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* ... (keep your existing styles) ... */
+
+/* Top Searches Banner */
+.top-searches-banner {
+  background-color: #e6f7ff;
+  border: 1px solid #b3e0ff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.top-searches-banner ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 10px; /* Indent from "Top Searches:" */
+}
+
+.top-searches-banner li {
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+/* Home Page Layout */
+.home-content-layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* 3 parts main, 1 part sidebar */
+  gap: 20px;
+}
+
+/* History Sidebar */
+.history-sidebar {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.history-sidebar h3 {
+  margin-top: 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.history-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history-sidebar li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 0.95em;
+}
+
+.history-sidebar li span {
+  color: #777;
+  font-size: 0.85em;
+}
+
+/* ... (keep your existing styles) ... */
+
+/* Search Bar */
+.search-bar-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex-grow: 1; /* Takes up most of the space */
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px 0 0 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.search-btn {
+  padding: 0 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 8px 8px 0;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+.search-btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Image Grid */
+.grid-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.grid-header h3 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.select-counter {
+  background-color: #e6f2ff;
+  color: #0056b3;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns as requested */
+  gap: 15px;
+}
+
+.image-item {
+  position: relative;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.image-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.image-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Checkbox Overlay */
+.checkbox-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-overlay input {
+  width: 16px;
+  height: 16px;
+}
+
+/* Selected State */
+.image-item.selected img {
+  transform: scale(1.05);
+}
+
+.image-item.selected::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 4px solid #007bff;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.image-item.selected .checkbox-overlay {
+  background-color: #007bff;
+}
